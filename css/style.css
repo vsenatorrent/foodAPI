@@ -1,7 +1,32 @@
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.form-inline {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form-inline .form-group {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+}
+
+.form-inline .form-control {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.card-deck {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-deck > .card {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+}
+
+.input-form__submit {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
 }
 /*# sourceMappingURL=style.css.map */
