@@ -1,18 +1,66 @@
-.form-inline
-    justify-content: space-between
-    .form-group
-        flex-basis: 80%
-    .form-control
-        flex-basis: 100%
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
 
-.card
-    &-deck
-        // justify-content: space-between
-        & > .card-item
-            flex-basis: 20%
-            flex-grow: 0
-            padding: 5px
+html
+    font-size: 62.5%
 
-.input-form
+img
+    width: 100%
+  
+.container
+    max-width: 1200px
+    margin: 0 auto
+    border: 1px solid black
+
+.index-form
+    width: 50%
+    margin: 20px auto
+    &__input
+        width: 95%
+        padding: 5px
+        vertical-align: middle
     &__submit
-        flex-basis: 20%            
+        display: inline-block
+        width: 25px
+        height: 30px
+        background: url('../img/search.svg') top center no-repeat
+        border: 0    
+
+.cards
+    border: 1px solid red
+    font-family: Arial
+    font-size: 1.4rem
+    &__item
+            border: 1px solid gray
+            padding: 5px
+    &__description
+        padding: 0 10px
+    &__name
+        display: block
+        margin-bottom: 15px
+    &__profit
+        border: 1px solid grey
+        border-right: none
+        border-left: none
+        text-align: center
+        padding: 5px 0
+        font-size: 1.2rem
+        margin-bottom: 5px
+    &__calories
+        border-right: 1px solid grey
+        padding-right: 4px
+    &__ingredients
+    &__link
+        display: inline-block
+        width: 20px
+        height: 16px
+        background: url('../img/youtube.svg') top center no-repeat
+        vertical-align: bottom
+    
+.card-wrapper
+    display: inline-block
+    width: 20%
+    padding: 10px
+    vertical-align: top
