@@ -1,22 +1,23 @@
 const getCardContaier = (imgPath, titleContent) => {
     const getElem = (selector, classname) => {
-        const elem = $(`<${selector}>`, {class: classname })
-        return elem;
-    }
+        return $(`<${selector}>`, {class: classname })
+    };
     // const card = $('<div>', {class: 'card'});
     const card = getElem('div', 'card my-2');
     // const cardImage = $('<img>', {class: 'card-img-top'});
+    const cardItem = getElem('div', 'card-item');
     const cardImage = getElem('img', 'card-img-top').attr('src', imgPath);
     // const cardBody = $('<div>', {class: 'card-body'});
     const cardBody = getElem('div', 'card-body');
     // const cardTitle = $('<h5>', {class: 'card-title'});
     const cardTitle = getElem('h5', 'card-title').text
-    ('label: ' + titleContent);
+    (titleContent);
     cardBody.append(cardTitle);
     // $('body').append(card, [cardImage, cardBody]);
     card.append(cardImage);
     card.append(cardBody);
-    return card;
+    cardItem.append(card);
+    return cardItem;
 }
 
 $('#index-form').on('submit', function(e){

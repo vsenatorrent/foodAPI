@@ -5,10 +5,13 @@
     .form-control
         flex-basis: 100%
 
-.card-deck
-    justify-content: space-between
-    & > .card
-        flex-basis: 15%
+.card
+    &-deck
+        // justify-content: space-between
+        & > .card-item
+            flex-basis: 20%
+            flex-grow: 0
+            padding: 5px
 
 .input-form
     &__submit
