@@ -25,17 +25,32 @@ img {
 }
 
 .index-form__input {
-  width: 95%;
-  padding: 5px;
+  width: 90%;
+  padding: 5px 10px;
   vertical-align: middle;
+  border-radius: 15px;
+  border: 1px solid #d9d0d0;
 }
 
 .index-form__submit {
   display: inline-block;
-  width: 25px;
+  padding: 5px;
+  width: 30px;
   height: 30px;
+  border: 1px solid #d7cece;
+  border-radius: 50%;
+  background-color: #fff;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.index-form__icon {
+  display: inline-block;
+  width: 18px;
+  height: 15px;
   background: url("../img/search.svg") top center no-repeat;
   border: 0;
+  vertical-align: middle;
 }
 
 .cards {
@@ -45,12 +60,14 @@ img {
 }
 
 .cards__item {
-  border: 1px solid gray;
+  border: 1px solid #d7cece;
   padding: 5px;
+  border-radius: 5px;
 }
 
 .cards__description {
   padding: 0 10px;
+  margin-bottom: 10px;
 }
 
 .cards__name {
@@ -59,17 +76,17 @@ img {
 }
 
 .cards__profit {
-  border: 1px solid grey;
+  border: 1px solid #d7cece;
   border-right: none;
   border-left: none;
   text-align: center;
   padding: 5px 0;
   font-size: 1.2rem;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 }
 
 .cards__calories {
-  border-right: 1px solid grey;
+  border-right: 1px solid #d7cece;
   padding-right: 4px;
 }
 
@@ -81,10 +98,99 @@ img {
   vertical-align: bottom;
 }
 
+.cards__watch {
+  font-size: 1.3rem;
+}
+
+.cards__button {
+  width: 100%;
+  font-family: Arial;
+  font-size: 1.2rem;
+}
+
 .card-wrapper {
   display: inline-block;
   width: 20%;
   padding: 10px;
   vertical-align: top;
+}
+
+.modal {
+  width: 65vw;
+  background-color: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 3;
+}
+
+.modal__header {
+  font-size: 2.4rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.modal__instruction {
+  color: #9d9d9d;
+  margin-bottom: 3rem;
+}
+
+.modal__ingredients {
+  list-style-type: none;
+  margin-bottom: 1.5rem;
+}
+
+.modal__image {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.modal__view {
+  text-align: center;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.modal__info {
+  padding: 2.5rem;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.modal__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.modal__close {
+  background-color: #fff;
+  border: none;
+  color: #9d9d9d;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-size: 1.4rem;
+}
+
+.modal__contact {
+  color: crimson;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-size: 1.4rem;
 }
 /*# sourceMappingURL=style.css.map */
